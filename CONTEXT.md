@@ -33,7 +33,7 @@ The default grade (`grade-curricular.json`) requires HTTP — silently skipped o
 ## Deployment
 GitHub Pages, `main` branch, root directory — `lsfcin.github.io/ppc`.
 Mirror without the login in the URL: `ufrpe.pages.dev/montagrade` (Cloudflare Pages project `ufrpe`, direct upload — a push does NOT update it).
-Redeploy after each push to `main`: `"$(core/run --python)" academy/administration/site/publicar.py`. The project also serves `ufrpe.pages.dev/docs` (docs-ufrpe), and a direct upload replaces it whole, so never deploy this folder alone.
+Redeploy after each push to `main`: `"$(core/run --python)" academy/administration/ufrpe-sites/publicar.py`. The project also serves `ufrpe.pages.dev/docs` (docs-ufrpe), and a direct upload replaces it whole, so never deploy this folder alone.
 
 <!-- routing:start -->
 ## Routing
