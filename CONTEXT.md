@@ -20,7 +20,7 @@ Users can move disciplines, change hours, and get real-time constraint feedback.
 - `Documentos/` — PDFs (CNE/CP 4/2024, CEPE/UFRPE 744/2024, CEPE/UFRPE 924/2025)
 
 ## Stack
-No build step. Open `index.html` via a local server or GitHub Pages.
+No build step. Open `index.html` via a local server.
 On `file://` the edit modals still work (partials injected synchronously via JS).
 The default grade (`grade-curricular.json`) requires HTTP — silently skipped on `file://`.
 
@@ -31,8 +31,7 @@ The default grade (`grade-curricular.json`) requires HTTP — silently skipped o
 | `<dialog>` | Native | Edit and categories modals |
 
 ## Deployment
-GitHub Pages, `main` branch, root directory — `lsfcin.github.io/ppc`.
-Mirror without the login in the URL: `ufrpe.pages.dev/montagrade` (Cloudflare Pages project `ufrpe`, direct upload — a push does NOT update it).
+`ufrpe.pages.dev/montagrade` only (Cloudflare Pages project `ufrpe`, direct upload — a push does NOT update it). GitHub Pages was switched off on 2026-11-23, when the repo `lsfcin/ppc` became `lsfcin/montagrade`.
 Redeploy after each push to `main`: `"$(core/run --python)" academy/administration/ufrpe-sites/publicar.py`. The project also serves `ufrpe.pages.dev/docs` (docs-ufrpe), and a direct upload replaces it whole, so never deploy this folder alone.
 
 <!-- routing:start -->
@@ -41,6 +40,7 @@ Redeploy after each push to `main`: `"$(core/run --python)" academy/administrati
 | File | Interface | API | Description |
 |------|-----------|-----|-------------|
 | [`ISSUES.md`](ISSUES.md) | — | — | What is currently untrue that we know about in this repo: hand-written issues first, every measured number inside its own generated block. |
+| [`README.md`](README.md) | — | — | Montagrade |
 | [`ROADMAP.md`](ROADMAP.md) | — | — | Montagrade — Roadmap |
 | [`SPECS.md`](SPECS.md) | — | — | SPECS — PPC Tool |
 | [`app.js`](app.js) | [`app.d.ts`](app.d.ts) | `ppc` | Alpine root component: curriculum state, initialization, queries, and display helpers |

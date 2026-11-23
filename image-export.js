@@ -1,5 +1,5 @@
 // PNG download of the page, without toolbar, buttons and the constraint sidebar
-const IMAGE_SKIP = '.toolbar, .tool-btn, .add-btn, .constraint-bar, .import-file, template'
+const IMAGE_SKIP = '.toolbar, .tool-btn, .add-btn, .constraint-bar, .import-file, .credito, template'
 
 // Alpine attributes (@click, :class, x-…) are not valid XML names and break the render; draw a clean clone instead
 function cleanClone(node) {
