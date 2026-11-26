@@ -6,6 +6,8 @@ declare function ppcDisciplines(): {
     closeModal(): void;
     saveEditing(): void;
     deleteEditing(): void;
+    duplicateEditing(): void;
+    duplicateDiscipline(id: any): any;
     hoursInvalid(): boolean;
     hoursWarning(): string;
     transversalThemes(): any;

@@ -64,6 +64,29 @@ function ppcDisciplines() {
       this.saveProgress()
     },
 
+    duplicateEditing() {
+      this._pushHistory()
+      this.duplicateDiscipline(this.editingId)
+      this.closeModal()
+      this.saveProgress()
+    },
+
+    // The copy sits right below the original in its period, named with the next Roman numeral
+    duplicateDiscipline(id) {
+      const original = this.byId(id)
+      if (!original) return null
+      const order = original.order ?? 0
+      this.disciplines
+        .filter(d => d.period === original.period && (d.order ?? 0) > order)
+        .forEach(d => { d.order = (d.order ?? 0) + 1 })
+      const copy = JSON.parse(JSON.stringify(original))
+      copy.id    = 'new-' + (this._nextId++)
+      copy.name  = nextNumberedName(original.name)
+      copy.order = order + 1
+      this.disciplines.push(copy)
+      return copy
+    },
+
     hoursInvalid() {
       if (!this.editing) return false
       const t = this.editing.teoria.hours + this.editing.pratica.hours + this.editing.extensao.hours

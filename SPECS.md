@@ -103,6 +103,7 @@ Name filters match substrings, except a term ending in a number ("Psicologia I")
 - **Pré-requisitos** — checkbox list of other non-elective disciplines.
 - **Temas Transversais** — one checkbox per theme whose constraint is enabled; section hidden when none is.
 - **EaD %** — always visible; blocks save if nucleus IV or extensão > 0.
+- **Duplicar** — below Excluir · Cancelar · Salvar: copies the saved discipline right below it in its period, name's trailing Roman numeral +1 (none → II).
 
 ### Rule Builder
 - "＋ Criar restrição" between the panel title and the list opens `#rule-modal`: Em cada · Considerando (+ qual) · Medir · Regra · Valor.
