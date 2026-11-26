@@ -1044,11 +1044,11 @@
       "id": "tcc",
       "name": "Trabalho de Conclusão de Curso — TCC",
       "period": 9,
-      "hours": 120,
+      "hours": 240,
       "order": 0,
       "teoria": {
-        "hours": 120,
-        "nucleus": "II"
+        "hours": 240,
+        "nucleus": "I"
       },
       "pratica": {
         "hours": 0,
@@ -1062,7 +1062,7 @@
         "met-cient"
       ],
       "department": "DC",
-      "color": "sapphire",
+      "color": "salmon",
       "isElective": false,
       "eadPercent": 0,
       "skipWeekly": true,
@@ -1307,6 +1307,35 @@
       "id": "cat-8"
     }
   ],
+  "departments": [
+    "DC",
+    "DED",
+    "DM",
+    "DL",
+    "DLCH",
+    "Outro"
+  ],
+  "groups": [
+    {
+      "id": "I",
+      "label": "Núcleo I"
+    },
+    {
+      "id": "II",
+      "label": "Núcleo II"
+    },
+    {
+      "id": "III",
+      "label": "Núcleo III",
+      "locked": true
+    },
+    {
+      "id": "IV",
+      "label": "Núcleo IV"
+    }
+  ],
   "title": "Grade Curricular de LC",
-  "subtitle": "Curso de Licenciatura em Computação — DC / UFRPE"
+  "subtitle": "Curso de Licenciatura em Computação — DC / UFRPE",
+  "disabledConstraints": [],
+  "customRules": []
 }
