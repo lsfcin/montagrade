@@ -65,10 +65,9 @@ Redeploy after each push to `main`: `"$(core/run --python)" academy/administrati
 | [`partials/edit-modal.js`](partials/edit-modal.js) | [`partials/edit-modal.d.ts`](partials/edit-modal.d.ts) | — | Edit discipline dialog HTML, injected synchronously before Alpine initializes |
 | [`partials/jsconfig.json`](partials/jsconfig.json) | — | — | ← add first-line comment |
 | [`partials/rule-modal.js`](partials/rule-modal.js) | [`partials/rule-modal.d.ts`](partials/rule-modal.d.ts) | — | Rule builder dialog HTML: four choices and a value, read back as one Portuguese sentence |
-| [`roman-suffix.js`](roman-suffix.js) | — | `toRoman`, `fromRoman`, `nextNumberedName` | nextNumberedName: the name a duplicated discipline gets — its trailing Roman numeral plus one, or II when it has none |
 | [`sortable.js`](sortable.js) | [`sortable.d.ts`](sortable.d.ts) | `ppcSortable` | SortableJS integration for drag-and-drop between period columns |
 | [`style.css`](style.css) | — | — | Base layout, curriculum grid, discipline cards, footer, and print styles |
-| [`tests/duplicate.test.js`](tests/duplicate.test.js) | [`tests/duplicate.test.d.ts`](tests/duplicate.test.d.ts) | — | Duplicating a discipline: the next Roman numeral in its name, and its place right below the original |
+| [`tests/duplicate.test.js`](tests/duplicate.test.js) | [`tests/duplicate.test.d.ts`](tests/duplicate.test.d.ts) | — | Duplicating a discipline: same name, placed right below the original |
 | [`tests/harness.js`](tests/harness.js) | [`tests/harness.d.ts`](tests/harness.d.ts) | `loadContext`, `readGrade`, `makeApp`, `panel` | Loads the browser scripts into a Node vm context and builds a ppc() app from a grade JSON |
 | [`tests/jsconfig.json`](tests/jsconfig.json) | — | — | ← add first-line comment |
 | [`tests/rules.test.js`](tests/rules.test.js) | [`tests/rules.test.d.ts`](tests/rules.test.d.ts) | — | Engine, fixed-rule equivalence, departments, hour groups and custom rules — run with `make verify-full` |

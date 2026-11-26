@@ -124,12 +124,10 @@ MODALS.edit = `
   </template>
   <template x-if="editing">
   <div class="modal-footer">
+    <button class="btn btn-cancel btn-left" @click="duplicateEditing()" title="Cria uma cópia logo abaixo">Duplicar</button>
     <button class="btn btn-danger"  @click="deleteEditing()">Excluir</button>
     <button class="btn btn-cancel"  @click="closeModal()">Cancelar</button>
     <button class="btn btn-primary" @click="saveEditing()" :disabled="hoursInvalid()">Salvar</button>
-    <div class="modal-footer-row">
-      <button class="btn btn-cancel" @click="duplicateEditing()" title="Cria uma cópia logo abaixo, com o próximo numeral romano">Duplicar</button>
-    </div>
   </div>
   </template>
 </dialog>

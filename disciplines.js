@@ -71,7 +71,7 @@ function ppcDisciplines() {
       this.saveProgress()
     },
 
-    // The copy sits right below the original in its period, named with the next Roman numeral
+    // The copy, same name, sits right below the original in its period
     duplicateDiscipline(id) {
       const original = this.byId(id)
       if (!original) return null
@@ -81,7 +81,6 @@ function ppcDisciplines() {
         .forEach(d => { d.order = (d.order ?? 0) + 1 })
       const copy = JSON.parse(JSON.stringify(original))
       copy.id    = 'new-' + (this._nextId++)
-      copy.name  = nextNumberedName(original.name)
       copy.order = order + 1
       this.disciplines.push(copy)
       return copy
