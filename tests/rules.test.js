@@ -6,8 +6,8 @@ const { makeApp, readGrade, panel, plain } = require('./harness.js')
 const failing = app => panel(app).filter(c => !c.ok).map(c => c.id)
 
 // The panel's verdicts before the engine migration (2026-10-30 snapshot)
-test('default grid keeps its verdicts: Núcleo II and Extensão fail', () => {
-  assert.deepEqual(failing(makeApp().app), ['c3', 'c4'])
+test('default grid keeps its verdicts: every constraint passes', () => {
+  assert.deepEqual(failing(makeApp().app), [])
 })
 
 test('stressed grid keeps its verdicts', () => {
@@ -21,7 +21,7 @@ test('stressed grid keeps its verdicts', () => {
   ds.filter(d => d.period === 2).forEach(d => { d.period = 1 })
   ds.forEach(d => { d.tags = (d.tags ?? []).filter(t => t !== 'ambiental') })
   s.atividadesAutonomas = 10
-  assert.deepEqual(failing(makeApp(s).app), ['c1', 'c3', 'c6', 'c7', 'c8', 'c10', 'c11', 'c12', 'ct1'])
+  assert.deepEqual(failing(makeApp(s).app), ['c6', 'c7', 'c8', 'c10', 'c11', 'c12', 'ct1'])
 })
 
 test('Psicologia II does not stand in for a missing Psicologia I', () => {

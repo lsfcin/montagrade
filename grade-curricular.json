@@ -437,7 +437,7 @@
       "name": "Algoritmos e Estruturas de Dados",
       "period": 4,
       "hours": 60,
-      "order": 1,
+      "order": 2,
       "teoria": {
         "hours": 30,
         "nucleus": "II"
@@ -466,7 +466,7 @@
       "name": "Circuitos Digitais",
       "period": 4,
       "hours": 60,
-      "order": 2,
+      "order": 3,
       "teoria": {
         "hours": 30,
         "nucleus": "II"
@@ -599,7 +599,7 @@
       "name": "Arquitetura de Computadores",
       "period": 5,
       "hours": 60,
-      "order": 2,
+      "order": 3,
       "teoria": {
         "hours": 30,
         "nucleus": "II"
@@ -627,7 +627,7 @@
       "name": "Banco de Dados",
       "period": 5,
       "hours": 60,
-      "order": 3,
+      "order": 2,
       "teoria": {
         "hours": 30,
         "nucleus": "II"
@@ -655,7 +655,7 @@
       "name": "Redes de Computadores",
       "period": 4,
       "hours": 60,
-      "order": 3,
+      "order": 1,
       "teoria": {
         "hours": 30,
         "nucleus": "II"
@@ -734,9 +734,9 @@
       "name": "Tecnologias na Educação",
       "period": 6,
       "hours": 60,
-      "order": 2,
+      "order": 4,
       "teoria": {
-        "hours": 30,
+        "hours": 15,
         "nucleus": "I"
       },
       "pratica": {
@@ -744,7 +744,7 @@
         "nucleus": "II"
       },
       "extensao": {
-        "hours": 30,
+        "hours": 45,
         "nucleus": "III"
       },
       "prerequisites": [
@@ -770,7 +770,7 @@
       "name": "Engenharia de Software",
       "period": 6,
       "hours": 60,
-      "order": 3,
+      "order": 2,
       "teoria": {
         "hours": 30,
         "nucleus": "II"
@@ -798,7 +798,7 @@
       "name": "Inteligência Artificial",
       "period": 6,
       "hours": 60,
-      "order": 4,
+      "order": 3,
       "teoria": {
         "hours": 30,
         "nucleus": "II"
@@ -876,10 +876,10 @@
     },
     {
       "id": "proj-1",
-      "name": "Projeto Integrador em Desenv. de Artefatos Educacionais",
-      "period": 7,
-      "hours": 120,
-      "order": 2,
+      "name": "Projeto Integrador em Desenv. de Artefatos Educacionais I",
+      "period": 6,
+      "hours": 60,
+      "order": 5,
       "teoria": {
         "hours": 0,
         "nucleus": "II"
@@ -889,11 +889,11 @@
         "nucleus": "II"
       },
       "extensao": {
-        "hours": 120,
+        "hours": 60,
         "nucleus": "III"
       },
       "prerequisites": [
-        "tec-edu"
+        "prog-2"
       ],
       "department": "DC",
       "color": "purple",
@@ -920,7 +920,7 @@
       "name": "Sistemas Operacionais",
       "period": 7,
       "hours": 60,
-      "order": 3,
+      "order": 2,
       "teoria": {
         "hours": 30,
         "nucleus": "II"
@@ -1000,10 +1000,10 @@
     },
     {
       "id": "proj-2",
-      "name": "Projeto Integrador em Educação em Computação",
+      "name": "Projeto Integrador em Educação em Computação I",
       "period": 8,
-      "hours": 120,
-      "order": 2,
+      "hours": 60,
+      "order": 7,
       "teoria": {
         "hours": 0,
         "nucleus": "II"
@@ -1013,12 +1013,11 @@
         "nucleus": "II"
       },
       "extensao": {
-        "hours": 120,
+        "hours": 60,
         "nucleus": "III"
       },
       "prerequisites": [
-        "met-ens",
-        "proj-1"
+        "met-ens"
       ],
       "department": "DC",
       "color": "purple",
@@ -1073,7 +1072,7 @@
       "name": "Optativa",
       "period": 7,
       "hours": 60,
-      "order": 4,
+      "order": 3,
       "teoria": {
         "hours": 60,
         "nucleus": "II"
@@ -1099,7 +1098,7 @@
       "name": "Optativa",
       "period": 8,
       "hours": 60,
-      "order": 3,
+      "order": 2,
       "teoria": {
         "hours": 60,
         "nucleus": "II"
@@ -1125,7 +1124,7 @@
       "name": "Optativa",
       "period": 8,
       "hours": 60,
-      "order": 4,
+      "order": 3,
       "teoria": {
         "hours": 60,
         "nucleus": "II"
@@ -1222,7 +1221,7 @@
       "eadPercent": 0,
       "skipWeekly": false,
       "tags": [],
-      "order": 3
+      "order": 4
     },
     {
       "id": "new-110",
@@ -1248,10 +1247,144 @@
       "eadPercent": 0,
       "skipWeekly": false,
       "tags": [],
-      "order": 4
+      "order": 3
+    },
+    {
+      "id": "new-111",
+      "name": "Projeto Integrador em Desenv. de Artefatos Educacionais II",
+      "period": 7,
+      "hours": 60,
+      "order": 5,
+      "teoria": {
+        "hours": 0,
+        "nucleus": "II"
+      },
+      "pratica": {
+        "hours": 0,
+        "nucleus": "II"
+      },
+      "extensao": {
+        "hours": 60,
+        "nucleus": "III"
+      },
+      "prerequisites": [
+        "prog-2"
+      ],
+      "department": "DC",
+      "color": "purple",
+      "isElective": false,
+      "eadPercent": 0,
+      "skipWeekly": false,
+      "tags": [
+        "ead-assistido",
+        "software-ead-projeto",
+        "software-ead-avaliacao",
+        "ava",
+        "ihc-educacional",
+        "midias-didatica",
+        "tdic-competencias",
+        "ambiental",
+        "diversidade",
+        "violencia",
+        "feminino",
+        "afro"
+      ]
+    },
+    {
+      "id": "new-112",
+      "name": "Projeto Integrador em Educação em Computação II",
+      "period": 9,
+      "hours": 60,
+      "order": 5,
+      "teoria": {
+        "hours": 0,
+        "nucleus": "II"
+      },
+      "pratica": {
+        "hours": 0,
+        "nucleus": "II"
+      },
+      "extensao": {
+        "hours": 60,
+        "nucleus": "III"
+      },
+      "prerequisites": [
+        "met-ens"
+      ],
+      "department": "DC",
+      "color": "purple",
+      "isElective": false,
+      "eadPercent": 0,
+      "skipWeekly": false,
+      "tags": [
+        "ihc-educacional",
+        "ead-assistido",
+        "software-ead-projeto",
+        "software-ead-avaliacao",
+        "ava",
+        "midias-didatica",
+        "tdic-competencias",
+        "ambiental",
+        "diversidade",
+        "violencia",
+        "feminino",
+        "afro"
+      ]
+    },
+    {
+      "id": "new-113",
+      "name": "Optativa",
+      "period": 8,
+      "hours": 60,
+      "order": 4,
+      "teoria": {
+        "hours": 60,
+        "nucleus": "II"
+      },
+      "pratica": {
+        "hours": 0,
+        "nucleus": "II"
+      },
+      "extensao": {
+        "hours": 0,
+        "nucleus": "III"
+      },
+      "prerequisites": [],
+      "department": "DC",
+      "color": "gray",
+      "isElective": true,
+      "eadPercent": 0,
+      "skipWeekly": false,
+      "tags": []
+    },
+    {
+      "id": "new-114",
+      "name": "Optativa",
+      "period": 7,
+      "hours": 60,
+      "order": 4,
+      "teoria": {
+        "hours": 60,
+        "nucleus": "II"
+      },
+      "pratica": {
+        "hours": 0,
+        "nucleus": "II"
+      },
+      "extensao": {
+        "hours": 0,
+        "nucleus": "III"
+      },
+      "prerequisites": [],
+      "department": "DC",
+      "color": "gray",
+      "isElective": true,
+      "eadPercent": 0,
+      "skipWeekly": false,
+      "tags": []
     }
   ],
-  "atividadesAutonomas": 165,
+  "atividadesAutonomas": 120,
   "numPeriods": 9,
   "categories": [
     {
